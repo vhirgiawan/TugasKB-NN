@@ -17,7 +17,7 @@ df = pd.DataFrame(data)
 x = df[['bedrooms', 'bathrooms', 'sqft', 'location']]
 y = df[['price']]
 
-model = Sequential()
+model = Sequential( )
 
 model.add(Dense(units=64, activation='relu', input_shape=(4,)))
 model.add(Dense(units=32, activation='relu'))
